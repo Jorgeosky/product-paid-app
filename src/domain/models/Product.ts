@@ -5,4 +5,7 @@ export type Product = {
   title: string;
   price: number;
   amount: number;
+  img: string;
+  description: string;
+  offer: number | null;
 };

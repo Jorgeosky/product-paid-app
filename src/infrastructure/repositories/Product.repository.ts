@@ -14,6 +14,9 @@ export const productRepository = {
         title: productDto.title,
         price: Number(productDto.price),
         amount: Number(productDto.amount),
+        img: productDto.img,
+        description: productDto.description,
+        offer: Number(productDto.offer) || null,
       }),
     );
   },

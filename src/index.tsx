@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { NextUIProvider } from '@nextui-org/react';
 import './index.css';
 import App from './infrastructure/components/App';
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +10,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App msg="PRODUCT STORE" />
+    <NextUIProvider style={{ margin: 0, width: '100%', height: '100%' }}>
+      <App msg="PRODUCT STORE" />
+    </NextUIProvider>
   </React.StrictMode>,
 );
 
